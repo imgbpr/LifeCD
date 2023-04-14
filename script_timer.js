@@ -20,7 +20,7 @@ var timeString_ =
 document.getElementById("timer").innerHTML = timeString_;
 document.getElementById("WeekCD").innerHTML = weekString_;
 
-setInterval(updateTimer, 60 * 1000);
+setInterval(updateTimer, 1000);
 function updateTimer() {
   const timeElapsed = Date.now() - targetDate.getTime();
   var weeks = Math.floor(timeElapsed / (7 * 24 * 60 * 60 * 1000));
